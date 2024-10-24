@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
+
 export const Navbar = () => {
+	const { store, actions } = useContext(Context)
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="navbar navbar-light bg-clear mb-3 container">
 			<Link to="/">
 				<span className="navbar-brand mb-0 h1">
 					<img
 						src="https://seeklogo.com/images/S/Star_Wars-logo-97DD55947B-seeklogo.com.png"
 						alt="Star Wars Logo"
 						className="mr-2"
-						style={{ height: "60px" }} 
+						style={{ height: "60px" }}
 					/>
 				</span>
 			</Link>
@@ -19,7 +22,10 @@ export const Navbar = () => {
 					Favorites
 				</button>
 				<ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-					<li><a className="dropdown-item active" href="#">Action</a></li>
+
+					{store.favs.map((fav, index) => {
+						return (<li>{fav} <button className="btn" onClick={() => actions.removeFavs(fav)}> <i class="fa-solid fa-trash-can"></i> </button></li>)
+					})}
 
 				</ul>
 			</div>

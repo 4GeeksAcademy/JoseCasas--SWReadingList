@@ -1,0 +1,9 @@
+body {
+    background-image: url("https://img.ksl.com/slc/2577/257711/25771177.jpg?filter=kslv2/responsive_story_lg");
+    background-size: cover;
+}
+
+.btn {
+    font-weight: bold;
+    box-shadow: 3px 3px 2px rgb(165, 169, 53);
+}

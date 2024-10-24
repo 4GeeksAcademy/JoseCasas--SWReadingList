@@ -11,7 +11,7 @@ export default function Planet() {
     async function getPlanet() {
       let response = await fetch(`https://www.swapi.tech/api/planets/${id}`)
       let data = await response.json()
-      setPlanet(data.results.properties)
+      setPlanet(data.result.properties)
     }
     getPlanet()
   }, [])

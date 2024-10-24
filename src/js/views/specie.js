@@ -11,7 +11,7 @@ export default function Specie() {
     async function getSpecie() {
       let response = await fetch(`https://www.swapi.tech/api/species/${id}`)
       let data = await response.json()
-      setSpecie(data.results.properties)
+      setSpecie(data.result.properties)
     }
     getSpecie()
   }, [])
