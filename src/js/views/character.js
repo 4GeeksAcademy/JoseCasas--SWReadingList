@@ -17,14 +17,39 @@ export default function Character() {
   }, [])
 
   return (
-    <div>
-      <h1>Name:</h1>
-      <p>{character.name}</p>
-      <h3>Height:</h3>
-      <p>{character.height}</p>
-      <h3>Gender:</h3>
-      <p>{character.gender}</p>
-
+    <div className="container d-flex justify-content-between pt-2">
+      <div className="col-md-4">
+        <img src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`} className="img-fluid" alt={character.name} />
+      </div>
+      <div className="col-md-8">
+        <h1>{character.name}</h1>
+        <div className="row">
+          <div className="col-md-4">
+            <strong>Name:</strong>
+            <p>{character.name}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Birth Year:</strong>
+            <p>{character.birth_year}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Gender:</strong>
+            <p>{character.gender}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Height:</strong>
+            <p>{character.height}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Skin Color:</strong>
+            <p>{character.skin_color}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Eye Color:</strong>
+            <p>{character.eye_color}</p>
+          </div>
+        </div>
+      </div>
 
     </div>
   )

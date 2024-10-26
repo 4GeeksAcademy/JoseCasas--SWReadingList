@@ -17,13 +17,39 @@ export default function Specie() {
   }, [])
 
   return (
-    <div>
-      <h1>Name:</h1>
-      <p>{specie.name}</p>
-      <h3>classification:</h3>
-      <p>{specie.classification}</p>
-      <h3>X height:</h3>
-      <p>{specie.average_height}</p>
+    <div className="container d-flex justify-content-between pt-2">
+      <div className="col-md-4">
+        <img src={`https://starwars-visualguide.com/assets/img/species/${id}.jpg`} className="img-fluid" alt={specie.name} />
+      </div>
+      <div className="col-md-8">
+        <h1>{specie.name}</h1>
+        <div className="row">
+          <div className="col-md-4">
+            <strong>Name:</strong>
+            <p>{specie.name}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Classification:</strong>
+            <p>{specie.classification}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Average Height:</strong>
+            <p>{specie.average_height}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Average Lifespan:</strong>
+            <p>{specie.average_lifespan}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Skin Colors:</strong>
+            <p>{specie.skin_colors}</p>
+          </div>
+          <div className="col-md-4">
+            <strong>Language:</strong>
+            <p>{specie.language}</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

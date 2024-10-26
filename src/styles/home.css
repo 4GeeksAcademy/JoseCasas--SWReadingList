@@ -1,9 +1,35 @@
 body {
-    background-image: url("https://img.ksl.com/slc/2577/257711/25771177.jpg?filter=kslv2/responsive_story_lg");
+    background-image: url("https://images3.alphacoders.com/900/900345.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .btn {
     font-weight: bold;
-    box-shadow: 3px 3px 2px rgb(165, 169, 53);
 }
+
+.btnI {
+    background-color: rgb(108, 236, 193);
+    box-shadow: 3px 3px 2px rgb(25, 164, 206);
+}
+
+.btnF {
+    background-color: rgb(231, 227, 30);
+    box-shadow: 3px 3px 2px rgb(201, 166, 24);
+}
+
+.container {
+    height: 520px;
+    background-image: url("https://wallpaper.dog/large/17231786.jpg");
+    background-size: cover;
+}
+.navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+  }
+  .cCard {
+    padding-top: 2%;
+  }
