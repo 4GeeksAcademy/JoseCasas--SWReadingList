@@ -23,13 +23,16 @@ body {
     height: 520px;
     background-image: url("https://wallpaper.dog/large/17231786.jpg");
     background-size: cover;
+    margin-top: 8%;
 }
+
 .navbar {
-    position: fixed; 
+    position: fixed;
     top: 0;
-    width: 100%; 
+    width: 100%;
     z-index: 1000;
-  }
-  .cCard {
+}
+
+.cCard {
     padding-top: 2%;
-  }
+}

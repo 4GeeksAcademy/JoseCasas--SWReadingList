@@ -27,6 +27,7 @@ export default function PlanetCards() {
 
   return (
     <div className="d-flex col-10 overflow-auto mt-5 mx-auto">
+
       {planets?.map((planet, index) => (
         <div key={index} className="card" style={{ "minWidth": "18rem" }}>
           <div className="card-body">
