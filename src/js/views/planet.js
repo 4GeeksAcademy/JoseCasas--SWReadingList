@@ -19,7 +19,13 @@ export default function Planet() {
   return (
     <div className="container d-flex justify-content-between pt-2">
       <div className="col-md-4">
-        <img src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} className="img-fluid" alt={planet.name} />
+        <img src={id == "1"
+          ? "https://upload.wikimedia.org/wikipedia/en/6/6d/Tatooine_%28fictional_desert_planet%29.jpg"
+          : `https://starwars-visualguide.com/assets/img/planets/${id}.jpg`
+        }
+          className="card-img-top" alt=""
+        />
+        {/* <img src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} className="img-fluid" alt={planet.name} /> */}
       </div>
       <div className="col-md-8">
         <h1>{planet.name}</h1>

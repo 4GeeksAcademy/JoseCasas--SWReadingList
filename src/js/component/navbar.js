@@ -24,7 +24,7 @@ export const Navbar = () => {
 				<ul className="dropdown-menu dropdown-menu " aria-labelledby="dropdownMenuButton2">
 
 					{store.favs.map((fav, index) => {
-						return (<li>{fav} <button className="btn" onClick={() => actions.removeFavs(fav)}> <i class="fa-solid fa-trash-can"></i> </button></li>)
+						return (<li key={index}>{fav} <button className="btn" onClick={() => actions.removeFavs(fav)}> <i className="fa-solid fa-trash-can"></i> </button></li>)
 					})}
 
 				</ul>

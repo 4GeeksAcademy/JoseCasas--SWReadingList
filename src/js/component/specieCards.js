@@ -35,8 +35,8 @@ export default function SpecieCards() {
             <p className="card-text">{specie.classification}</p>
             <p className="card-text">{specie.average_height}</p>
             <p className="card-text">{specie.average_lifespan}</p>
-            <Link to={`/specie/${specie.uid}`} href="#" className="btn btnI mx-2"><i class="fa-regular fa-circle-question"></i> Learn More</Link>
-            <span className="btn btnF" onClick={(e) => handleFavorites(e, specie.name)}><i class="fa-regular fa-star"></i> Fav</span>
+            <Link to={`/specie/${specie.uid}`} href="#" className="btn btnI mx-2"><i className="fa-regular fa-circle-question"></i> Learn More</Link>
+            <span className="btn btnF" onClick={(e) => handleFavorites(e, specie.name)}><i className="fa-regular fa-star"></i> Fav</span>
           </div>
         </div>
       ))}

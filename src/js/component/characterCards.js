@@ -35,8 +35,8 @@ export default function CharacterCards() {
             <p className="card-title">{character.skin_color}</p>
             <p className="card-title">{character.height}</p>
             <p className="card-title">{character.mass}</p>
-            <Link to={`/character/${character.uid}`} href="#" className="btn btnI mx-2"><i class="fa-regular fa-circle-question"></i> Learn More</Link>
-            <span className="btn btnF" onClick={(e) => handleFavorites(e, character.name)}><i class="fa-regular fa-star"></i> Fav</span>
+            <Link to={`/character/${character.uid}`} href="#" className="btn btnI mx-2"><i className="fa-regular fa-circle-question"></i> Learn More</Link>
+            <span className="btn btnF" onClick={(e) => handleFavorites(e, character.name)}><i className="fa-regular fa-star"></i> Fav</span>
           </div>
         </div>
       ))}
